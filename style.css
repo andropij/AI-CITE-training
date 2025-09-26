@@ -2,11 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: var(--font-color--white);
 }
 
 :root {
     --bg: radial-gradient(1200px 800px at 80% -10%, rgba(124, 92, 255, .15), transparent), radial-gradient(1000px 600px at 10% 10%, rgba(64, 211, 255, .12), transparent), #0b1020;
     --font-color--white:#fff;
+    --font-color--p: #cacaca;
+    --nav-color:#0b1020;
+    --bg-btn: linear-gradient(#4e4d9e, #52a5f3 );
 }
 
 body {
@@ -16,22 +21,54 @@ body {
     font-family: "Noto sans";
 }
 
+.navbar {
+    position: sticky;
+
+    background: var(--nav-color);
+}
+
+.navbar .navbar-menu a p:hover {
+    transition: ease-in 0.3s;
+    color: var(--font-color--white);
+}
+
 
 /* Utility селекторы */
     .btn {
+       border: 1px solid rgba(124, 92, 255, .15);
+       border-radius: 10px;
 
-    }
-
-    .btn-blc {
+       padding: 10px 20px; 
 
     }
 
     .btn-blue {
+        background: var(--bg-btn) ;
+    }
 
+    .flex {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
     }
 
     .margin-top {
 
+    }
+
+    .container-nav {
+        border: 1px solid rgba(124, 92, 255, .15);
+        
+        padding: 10px 0;
+
+    }
+
+    .container {
+        border: 1px solid rgba(124, 92, 255, .15);
+        border-radius: 10px;
     }
 
 
@@ -47,12 +84,15 @@ body {
 }
 
 .text-md {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    
 }
 
 .text-sm--h {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-color--p);
 } 
 
 .text-sm--p {
