@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: radial-gradient(1200px 800px at 80% -10%, rgba(124, 92, 255, .15), transparent), radial-gradient(1000px 600px at 10% 10%, rgba(64, 211, 255, .12), transparent), #0b1020;
+    --font-color--white:#fff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--font-color--white);
+
+    font-family: "Noto sans";
+}
+
+
+/* Utility селекторы */
+    .btn {
+
+    }
+
+    .btn-blc {
+
+    }
+
+    .btn-blue {
+
+    }
+
+    .margin-top {
+
+    }
+
+
+
+/* Шрифты */
+
+.text-xxl {
+    font-size: 64px;
+}
+
+.text-xl {
+    font-size: 36px;
+}
+
+.text-md {
+    font-size: 20px;
+}
+
+.text-sm--h {
+    font-size: 18px;
+    font-weight: 300;
+} 
+
+.text-sm--p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.text-black {
+
+}
