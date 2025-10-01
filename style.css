@@ -17,13 +17,10 @@
 
 body {
     background: var(--bg);
+
     color: var(--font-color--white);
 
     font-family: "Noto sans";
-
-   
-
-    
 
 }
 
@@ -159,6 +156,63 @@ header {
 
 }
 
+/* Pricing cards */
+
+.pricing-header {
+    
+}
+
+.pricing-cards{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 15px;
+}
+
+.container-big .pricing-cards .pricing-main {
+
+    flex-direction: column;
+
+    padding: 10px 0 0 0 ;
+
+}
+
+.container-big .pricing-cards .pricing-main:has( a:hover), a:hover {
+    border: 1px #5553a8 solid;
+}
+
+.container-big .pricing-cards a:hover {
+
+    background: var(--bg-btn) ;
+
+    color: var(--nav-color);
+    
+}
+
+.container-big .pricing-cards .pricing-main a{
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-weight: 600;
+}
+
+.container-big .pricing-cards .pricing-main h3 , h1 , ul {
+    align-self: start;
+    
+    margin-left: 30px;
+}
+
+.container-big .pricing-cards .pricing-main li {
+    margin-left: 15px;
+}
+
+
 
 /* Utility селекторы */
 
@@ -170,6 +224,7 @@ header {
     }
 
     .btn {
+        
        border: 1px solid rgba(124, 92, 255, .15);
        border-radius: 10px;
 
@@ -220,12 +275,14 @@ header {
     }
 
     .container-big {
+        
 
         max-width: 1200px;
 
         justify-self: center;
         
     }
+
 
 
 
