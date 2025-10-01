@@ -12,6 +12,7 @@
     --font-color--h: #aaa9a9;
     --nav-color:#0b1020;
     --bg-btn: linear-gradient(#4e4d9e, #52a5f3 );
+    --cards-main: rgba(121, 116, 141, 0.068);
 }
 
 body {
@@ -20,20 +21,25 @@ body {
 
     font-family: "Noto sans";
 
+   
+
+    
+
 }
+
+
 
 header {
     background: var(--nav-color);
+
+    position: sticky;
+    
     
 }
 
 .navbar {
-    position: sticky;
-
-    width: 70%;
-
-    justify-self: center;
     
+      
 }
 
 .navbar .navbar-menu a p:hover {
@@ -114,6 +120,45 @@ header {
     color: #e4c6c6;
 }
 
+/* hero cards */
+
+.cards-header {
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.cards .cards-main {
+    background: var(--cards-main);
+
+    padding: 15px;
+}
+
+.cards2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 100px;
+}
+
+.cards2 .cards2-main {
+    background: var(--cards-main);
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
 
 /* Utility селекторы */
 
@@ -153,7 +198,7 @@ header {
     }
 
     .margin-top {
-        margin-top: 40px;
+        margin-top: 100px;
     }
 
     .margin-top--sm {
@@ -176,7 +221,7 @@ header {
 
     .container-big {
 
-        width: 69%;
+        max-width: 1200px;
 
         justify-self: center;
         
