@@ -61,6 +61,10 @@ header .navbar {
     color: var(--font-color--white);
 }
 
+.navbar a:hover {
+    border: 1px #5553a8 solid;
+}
+
 /* Герой, основной блок */
 
 .grid .card .card-header {
@@ -113,7 +117,7 @@ header .navbar {
 .grid .card2 .card-main {
     background: var(--nav-color);
 
-    padding: 10px 0px 190px;
+    padding: 10px 0px 290px;
     margin: 10px; 
 }
 
@@ -213,7 +217,7 @@ header .navbar {
 
 }
 
-.container-big .pricing-cards .pricing-main:has( a:hover), a:hover {
+.container-big .pricing-cards .pricing-main:has( a:hover),.container-big .pricing-cards .pricing-main a:hover {
     border: 2px #5553a8 solid;
 }
 
@@ -279,7 +283,7 @@ header .navbar {
        
 }
 
-.news-cards .news-main:has(a:hover) {
+.news-cards .news-main:has(a:hover), .news-cards .news-main a:hover {
     border: 2px #5553a8 solid;
 }
 
@@ -484,9 +488,9 @@ footer {
         }
 
         .navbar {
-        display: grid;
+        display: flex;
 
-        grid-template-columns: 1fr fr;
+        flex-direction: column;
 
     }
 
