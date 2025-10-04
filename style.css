@@ -74,10 +74,36 @@ header .navbar {
 
     align-items: center;
 
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 15px;
-    
+    margin-left: 5px;
 
+}
+
+.card-main--text {
+    border-top: 2px solid rgba(124, 92, 255, .15);
+    
+        padding-top: 40px;
+
+}
+
+.card-main--text p {
+    margin-left: 15px;
+    
+    font-size: 15px;
+
+}
+
+#green {
+    background: rgb(51, 158, 51);
+}
+
+#red {
+    background: red;
+}
+
+#orange {
+    background: orange;
 }
 
 .grid .card2 {
@@ -87,9 +113,10 @@ header .navbar {
 .grid .card2 .card-main {
     background: var(--nav-color);
 
-    padding: 10px 10px 170px;
+    padding: 10px 0px 190px;
     margin: 10px; 
 }
+
 
 .card-main span {
     color: #706ed1;
@@ -135,10 +162,6 @@ header .navbar {
 
 /* hero cards */
 
-.cards-header {
-
-}
-
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,10 +197,6 @@ header .navbar {
 
 /* Pricing cards */
 
-.pricing-header {
-    
-}
-
 .pricing-cards{
     display: grid;
 
@@ -195,7 +214,7 @@ header .navbar {
 }
 
 .container-big .pricing-cards .pricing-main:has( a:hover), a:hover {
-    border: 1px #5553a8 solid;
+    border: 2px #5553a8 solid;
 }
 
 .container-big .pricing-cards a:hover {
@@ -261,7 +280,7 @@ header .navbar {
 }
 
 .news-cards .news-main:has(a:hover) {
-    border: 1px #5553a8 solid;
+    border: 2px #5553a8 solid;
 }
 
 .news-cards .news-main p:nth-child(4) {
@@ -308,8 +327,8 @@ footer {
 /* Utility селекторы */
 
     .circle {
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       background-color: blue; /* Пример цвета */
       border-radius: 50%;
     }
@@ -429,21 +448,56 @@ footer {
 }
 
 @media (max-width: 700px) {
+
+
     header .navbar .navbar-menu {
         display: none;
     }
 
 
 
-    .grid, .cards , .cards2, .pricing-cards, .news-cards, .form  {
+    .grid, .cards , .cards2, .pricing-cards, .news-cards, .form , footer  {
         display: flex;
 
         flex-direction: column;
+
     }
+
+    footer {
+        padding: 10px;
+
+
+    }
+    
 
     .container-big {
         width: auto;
 
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+        body {
+            padding: 10px;
+        }
+
+        .navbar {
+        display: grid;
+
+        grid-template-columns: 1fr fr;
+
+    }
+
+    .cards-header, .pricing-header, .news-header  {
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .text-xxl {
+        font-size: 30px;
     }
 }
