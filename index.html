@@ -24,157 +24,164 @@
           <a href="#"><p class="text-sm--h">Контакты</p></a>
         </nav>
         <nav class="navbar-login flex">
-          <a href="" class="btn btn-blk text-md"> <p>Войти</p> </a>
-          <a href="" class="btn btn-blue text-md">
+          <button href="" class="btn text-md"><p>Войти</p></button>
+          <button href="" class="btn btn-blue text-md">
             <p class="text-black">Создать аккаунт</p>
-          </a>
+          </button>
         </nav>
       </nav>
     </header>
-    <section class="container-big">
+    <div class="container-big">
       <!-- Герой, основной блок -->
+      <section>
+        <div class="grid margin-top">
+          <!-- Первая карточка -->
 
-      <section class="grid margin-top">
-        <!-- Первая карточка -->
-
-        <div class="card">
-          <div class="card-header container">
-            <p class="text-sm--p">Новый релиз * V0.8</p>
+          <div class="card">
+            <div class="card-header container">
+              <p class="text-sm--p">Новый релиз * V0.8</p>
+            </div>
+            <h1 class="text-xxl margin-top--sm">
+              Практический макет для прокачки вёрстки: гриды, флексы, адаптив
+            </h1>
+            <p class="text-sm--h margin-top--sm">
+              Верстай блоки, играйся с сетками, добивайся идеального
+              выравнивания и контраста. Макет незавязан на фреймворк — чистый
+              HTML+CSS.
+            </p>
           </div>
-          <h1 class="text-xxl margin-top--sm">
-            Практический макет для прокачки вёрстки: гриды, флексы, адаптив
-          </h1>
-          <p class="text-sm--h margin-top--sm">
-            Верстай блоки, играйся с сетками, добивайся идеального выравнивания
-            и контраста. Макет незавязан на фреймворк — чистый HTML+CSS.
-          </p>
+
+          <!-- Вторая карточка -->
+
+          <div class="card2 container">
+            <div class="card-main container">
+              <div class="circles">
+                <div class="circle" id="red"></div>
+                <div class="circle" id="orange"></div>
+                <div class="circle" id="green"></div>
+              </div>
+              <div class="card-main--text">
+                <p class="text-sm--p">
+                  <span>.container</span> { max-width: 1200px }
+                </p>
+                <p class="text-sm--p"><span>.grid</span> { display: grid }</p>
+                <p class="text-sm--h">
+                  /* допиши стили, чтобы улучшить слой */
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-btn">
+          <a href="" class="btn btn-blue text-md"
+            ><p class="text-black">Скачать макет</p>
+          </a>
+          <a href="" class="btn text-md"> <p>Документация</p> </a>
+        </div>
+        <div class="hero-btn--color">
+          <p class="container text-md" id="green">Готово к мобайлу</p>
+          <p class="container text-md" id="red">Есть недочёты — исправь!</p>
         </div>
 
-        <!-- Вторая карточка -->
+        <!-- Герой, карточки -->
 
-        <div class="card2 container">
-          <div class="card-main container">
-            <div class="circles">
-              <div class="circle" id="red"></div>
-              <div class="circle" id="orange"></div>
-              <div class="circle" id="green"></div>
-            </div>
-            <div class="card-main--text">
-              <p class="text-sm--p">
-                <span>.container</span> { max-width: 1200px }
+        <div class="hero-cards--op">
+          <div class="cards-header flex margin-top">
+            <h2>Возможности</h2>
+            <p class="text-sm--h">
+              Сетки, карточки, кнопки, типографика, доступность
+            </p>
+          </div>
+          <div class="cards margin-top--sm">
+            <div class="cards-main container">
+              <img src="" alt="" />
+              <h3 class="margin-top--sm">Три колонки</h3>
+              <p class="text-sm--h margin-top--sm">
+                Протяни сетку, сделай ровные отступы, добавь ховер.
               </p>
-              <p class="text-sm--p"><span>.grid</span> { display: grid }</p>
-              <p class="text-sm--h">/* допиши стили, чтобы улучшить слой */</p>
+            </div>
+            <div class="cards-main container">
+              <img src="" alt="" />
+              <h3 class="margin-top--sm">Пиксель‑перфект</h3>
+              <p class="text-sm--h margin-top--sm">
+                Сверяй вертикальный ритм и межстрочные интервалы.
+              </p>
+            </div>
+            <div class="cards-main container">
+              <img src="" alt="" />
+              <h3 class="margin-top--sm">Компоненты</h3>
+              <p class="text-sm--h margin-top--sm">
+                Кнопки, чипы, бейджи — собери палитру состояний.
+              </p>
+            </div>
+          </div>
+          <div class="cards2 margin-top">
+            <div class="cards2-main container">
+              <h2 class="margin-top--sm">120+</h2>
+              <p class="text-sm--h">Вариаций сеток</p>
+            </div>
+            <div class="cards2-main container">
+              <h2 class="margin-top--sm">48</h2>
+              <p class="text-sm--h">Компонентов</p>
+            </div>
+            <div class="cards2-main container">
+              <h2 class="margin-top--sm">0</h2>
+              <p class="text-sm--h">JS обязателен</p>
+            </div>
+            <div class="cards2-main container">
+              <h2 class="margin-top--sm">∞</h2>
+              <p class="text-sm--h">Комбинаций стилей</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="hero-btn">
-        <a href="" class="btn btn-blue text-md"
-          ><p class="text-black">Скачать макет</p>
-        </a>
-        <a href="" class="btn text-md"> <p>Документация</p> </a>
-      </div>
-      <div class="hero-btn--color">
-        <p class="container text-md" id="green">Готово к мобайлу</p>
-        <p class="container text-md" id="red">Есть недочёты — исправь!</p>
-      </div>
 
-      <!-- Герой, карточки -->
-
-      <div class="hero-cards--op">
-        <div class="cards-header flex margin-top">
-          <h2>Возможности</h2>
+      <!-- Pricing, карточки -->
+      <section>
+        <div class="pricing-header margin-top flex">
+          <h2>Тарифы (для тренировки таблиц)</h2>
           <p class="text-sm--h">
-            Сетки, карточки, кнопки, типографика, доступность
+            Попробуй выровнять цены и кнопки по базовой линии
           </p>
         </div>
-        <div class="cards margin-top--sm">
-          <div class="cards-main container">
-            <img src="" alt="" />
-            <h3 class="margin-top--sm">Три колонки</h3>
-            <p class="text-sm--h margin-top--sm">
-              Протяни сетку, сделай ровные отступы, добавь ховер.
-            </p>
+        <div class="pricing-cards margin-top--sm">
+          <div class="pricing-main container flex">
+            <h3>Starter</h3>
+            <h1>0₽</h1>
+            <ul>
+              <li>1 проект</li>
+              <li>Базовые блоки</li>
+              <li>Поддержка — комьюнити</li>
+            </ul>
+            <a href="" class="container margin-top--sm">Выбрать</a>
           </div>
-          <div class="cards-main container">
-            <img src="" alt="" />
-            <h3 class="margin-top--sm">Пиксель‑перфект</h3>
-            <p class="text-sm--h margin-top--sm">
-              Сверяй вертикальный ритм и межстрочные интервалы.
-            </p>
-          </div>
-          <div class="cards-main container">
-            <img src="" alt="" />
-            <h3 class="margin-top--sm">Компоненты</h3>
-            <p class="text-sm--h margin-top--sm">
-              Кнопки, чипы, бейджи — собери палитру состояний.
-            </p>
-          </div>
-        </div>
-        <div class="cards2 margin-top">
-          <div class="cards2-main container">
-            <h2 class="margin-top--sm">120+</h2>
-            <p class="text-sm--h">Вариаций сеток</p>
-          </div>
-          <div class="cards2-main container">
-            <h2 class="margin-top--sm">48</h2>
-            <p class="text-sm--h">Компонентов</p>
-          </div>
-          <div class="cards2-main container">
-            <h2 class="margin-top--sm">0</h2>
-            <p class="text-sm--h">JS обязателен</p>
-          </div>
-          <div class="cards2-main container">
-            <h2 class="margin-top--sm">∞</h2>
-            <p class="text-sm--h">Комбинаций стилей</p>
-          </div>
-        </div>
-      </div>
-      <!-- Pricing, карточки -->
 
-      <div class="pricing-header margin-top flex">
-        <h2>Тарифы (для тренировки таблиц)</h2>
-        <p class="text-sm--h">
-          Попробуй выровнять цены и кнопки по базовой линии
-        </p>
-      </div>
-      <div class="pricing-cards margin-top--sm">
-        <div class="pricing-main container flex">
-          <h3>Starter</h3>
-          <h1>0₽</h1>
-          <ul>
-            <li>1 проект</li>
-            <li>Базовые блоки</li>
-            <li>Поддержка — комьюнити</li>
-          </ul>
-          <a href="" class="container margin-top--sm">Выбрать</a>
-        </div>
+          <div class="pricing-main container flex">
+            <h3>Pro</h3>
+            <h1>490₽</h1>
+            <ul>
+              <li>Неограниченно проектов</li>
+              <li>Расширенные компоненты</li>
+              <li>Приоритетная поддержка</li>
+            </ul>
+            <a href="" class="container margin-top--sm">Попробовать</a>
+          </div>
 
-        <div class="pricing-main container flex">
-          <h3>Pro</h3>
-          <h1>490₽</h1>
-          <ul>
-            <li>Неограниченно проектов</li>
-            <li>Расширенные компоненты</li>
-            <li>Приоритетная поддержка</li>
-          </ul>
-          <a href="" class="container margin-top--sm">Попробовать</a>
+          <div class="pricing-main container flex">
+            <h3>Team</h3>
+            <h1>1990₽</h1>
+            <ul>
+              <li>5 мест</li>
+              <li>Дизайн‑система</li>
+              <li>SLA 24/7</li>
+            </ul>
+            <a href="" class="container margin-top--sm">Связаться</a>
+          </div>
         </div>
-
-        <div class="pricing-main container flex">
-          <h3>Team</h3>
-          <h1>1990₽</h1>
-          <ul>
-            <li>5 мест</li>
-            <li>Дизайн‑система</li>
-            <li>SLA 24/7</li>
-          </ul>
-          <a href="" class="container margin-top--sm">Связаться</a>
-        </div>
-      </div>
+      </section>
 
       <!-- News, карточки -->
+
       <section class="news">
         <div class="news-header margin-top flex">
           <h2>Лента блога</h2>
@@ -251,8 +258,10 @@
       </section>
 
       <!-- Footer -->
+    </div>
 
-      <footer class="margin-top">
+    <footer class="margin-top">
+      <div class="footer-container">
         <div class="footer-column">
           <a href="#" class="text-md"><img src="#" alt="" />FlexGrid</a>
           <p class="text-sm--h">
@@ -262,28 +271,28 @@
         <div class="footer-column">
           <h3>Продукт</h3>
           <ul>
-            <li><a href="#">Функции</a></li>
-            <li><a href="#">Прайс</a></li>
-            <li><a href="#">Релизы</a></li>
+            <li><a href="#" class="text-sm--h">Функции</a></li>
+            <li><a href="#" class="text-sm--h">Прайс</a></li>
+            <li><a href="#" class="text-sm--h">Релизы</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>Компания</h3>
           <ul>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#" class="text-sm--h">О нас</a></li>
+            <li><a href="#" class="text-sm--h">Вакансии</a></li>
+            <li><a href="#" class="text-sm--h">Контакты</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>Ресурсы</h3>
           <ul>
-            <li><a href="#">Гайдлайны</a></li>
-            <li><a href="#">Коммьюнити</a></li>
-            <li><a href="#">Поддержка</a></li>
+            <li><a href="#" class="text-sm--h">Гайдлайны</a></li>
+            <li><a href="#" class="text-sm--h">Коммьюнити</a></li>
+            <li><a href="#" class="text-sm--h">Поддержка</a></li>
           </ul>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
   </body>
 </html>

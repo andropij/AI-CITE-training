@@ -1,8 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+
     box-sizing: border-box;
+
     text-decoration: none;
+
     color: var(--font-color--white);
 }
 
@@ -13,6 +16,7 @@
     --nav-color:#0b1020;
     --nav-color--transparent:hsla(226, 49%, 8%, 0.925);
     --bg-btn: linear-gradient(#4e4d9e, #52a5f3 );
+    --bg-btn--active: #52a5f3;
     --cards-main: rgba(121, 116, 141, 0.068);
 }
 
@@ -24,7 +28,6 @@ body {
     font-family: "Noto sans";
 
     position: relative;
-
 }
 
 
@@ -42,27 +45,17 @@ header {
 
     grid-template-columns: minmax(650px,1300px);
 
-    justify-content: center;
-
-    
+    justify-content: center; 
 }
 
 header .navbar {
-
    justify-content: space-between;
-   
-
-    
 }
 
 .navbar .navbar-menu a p:hover {
     transition: ease-in 0.3s;
 
     color: var(--font-color--white);
-}
-
-.navbar a:hover {
-    border: 1px #5553a8 solid;
 }
 
 /* Герой, основной блок */
@@ -79,23 +72,21 @@ header .navbar {
     align-items: center;
 
     gap: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
+
+    margin: 0 0 15px 5px;
 
 }
 
 .card-main--text {
     border-top: 2px solid rgba(124, 92, 255, .15);
     
-        padding-top: 40px;
-
+    padding-top: 40px;
 }
 
 .card-main--text p {
     margin-left: 15px;
     
     font-size: 15px;
-
 }
 
 #green {
@@ -129,13 +120,16 @@ header .navbar {
 .hero-btn {
     display: flex;
     justify-content: start;
+
     gap: 10px;
+
     margin-top: 30px;
 }
 
 .hero-btn--color {
     display: flex;
     justify-content: start;
+
     gap: 20px;
     margin-top: 15px;
 }
@@ -150,7 +144,6 @@ header .navbar {
     font-size: 12px;
 
     color: #e9f7ea;
-    
 }
 
 
@@ -196,7 +189,6 @@ header .navbar {
     text-align: center;
 
     padding: 20px;
-
 }
 
 /* Pricing cards */
@@ -210,7 +202,6 @@ header .navbar {
 }
 
 .container-big .pricing-cards .pricing-main {
-
     flex-direction: column;
 
     padding: 10px 0 0 0 ;
@@ -222,7 +213,6 @@ header .navbar {
 }
 
 .container-big .pricing-cards a:hover {
-
     background: var(--bg-btn) ;
 
     color: var(--nav-color);
@@ -258,9 +248,7 @@ header .navbar {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 15px;
-
-    
+    gap: 15px;   
 }
 
 .news-cards .news-main {
@@ -279,8 +267,7 @@ header .navbar {
     
     text-align: center;
 
-    align-self: center;
-       
+    align-self: center;    
 }
 
 .news-cards .news-main:has(a:hover), .news-cards .news-main a:hover {
@@ -318,6 +305,12 @@ header .navbar {
 /* footer */
 
 footer {
+    background: var(--nav-color);
+    
+    border-top: 2px solid rgba(163, 141, 252, 0.15);
+}
+
+.footer-container {
     display: grid;
 
     grid-template-columns: 2fr repeat(3, 1fr);
@@ -325,6 +318,16 @@ footer {
     gap: 60px;
 
     margin-bottom: 50px;
+
+    padding: 10px;
+
+    justify-self: center;
+}
+
+.footer-container a:hover {
+    transition: ease-in 0.3s;
+
+    color: var(--font-color--white);
 }
 
 
@@ -333,7 +336,9 @@ footer {
     .circle {
       width: 12px;
       height: 12px;
-      background-color: blue; /* Пример цвета */
+
+      background-color: blue; 
+
       border-radius: 50%;
     }
 
@@ -344,11 +349,24 @@ footer {
 
        padding: 15px 15px; 
 
+       background: none;
+
+       cursor: pointer;
+
+    }
+
+    .btn:hover {
+        border: 1px #5553a8 solid;
     }
 
     .btn-blue {
         background: var(--bg-btn) ;
+    }
 
+    .btn-blue:hover {
+        border: 1px var(--bg-btn--active) solid;
+
+        background: linear-gradient(#7c7baa, #88bae9 );
     }
 
     .flex {
@@ -378,8 +396,6 @@ footer {
         border: 2px solid var(--bg);
         
         padding: 10px 0;
-        
-
     }
 
     .container {
@@ -392,12 +408,8 @@ footer {
         
         max-width: 1200px;
 
-        justify-self: center;
-        
+        justify-self: center;   
     }
-
-
-
 
 /* Шрифты */
 
@@ -412,7 +424,6 @@ footer {
 .text-md {
     font-size: 16px;
     font-weight: 600;
-    
 }
 
 .text-sm--h {
@@ -458,19 +469,14 @@ footer {
         display: none;
     }
 
-
-
     .grid, .cards , .cards2, .pricing-cards, .news-cards, .form , footer  {
         display: flex;
 
         flex-direction: column;
-
     }
 
     footer {
         padding: 10px;
-
-
     }
     
 
@@ -491,7 +497,6 @@ footer {
         display: flex;
 
         flex-direction: column;
-
     }
 
     .cards-header, .pricing-header, .news-header  {
